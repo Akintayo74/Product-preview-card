@@ -85,7 +85,39 @@ header h1{
 
 @media (min-width: 768px) {
     .container{
+        flex-direction: row;
+        /* width: 100%; */
         padding: 20px;
+        height: 100vh;
+    }
+
+    .main-image{
+        width: 25%;
+    }
+
+    .main-image img{
+        /* width: 100%; */
+    }
+
+    .btn{   
+        display: block;
+    }
+
+    header{
+        width: 300px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        padding: 20px;
+    }
+
+
+    .main-text p{
+        width: 300px;
     }
 }
 
