@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Document</title>
 </head>
@@ -12,17 +15,14 @@
     <section class="main-image">
       <!--<img src="/images/image-product-mobile.jpg" alt="Beautiful image of a perfume">-->
       <img
-        srcset="/images/image-product-mobile.jpg 480w, /images/image-product-desktop.jpg 800w"
-        sizes="(max-width: 600px) 480px,
-                800px"
-        src="/images/image-product-desktop.jpg"
+        src="/images/image-product-mobile.jpg"
         alt="Perfume image"     
       />
     </section>
   
     <header>
-      <h3>Perfume</h3>
-      <h1>Gabrielle Essence Eau De Parfum</h1>
+      <p>PERFUME</p>
+      <h1><strong>Gabrielle Essence Eau De Parfum</strong></h1>
     </header>
   
     <main> 
@@ -33,11 +33,16 @@
       </section>
   
       <span class="price">
-        $149.99
-        <s>$169.99</s>
+        <strong>$149.99</strong>    
       </span>
+      
+      <span class="former-price">
+        <s class="bla">$169.99</s>
+      </span>
+      
+      
   
-      <section>
+      <section class="btn">
         <button type="submit">
           <img src="/images/icon-cart.svg" alt="Image of a cart">
           Add to cart
