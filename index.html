@@ -13,11 +13,14 @@
 
   <div class="container">
     <section class="main-image">
-      <!--<img src="/images/image-product-mobile.jpg" alt="Beautiful image of a perfume">-->
-      <img
-        src="/images/image-product-mobile.jpg"
-        alt="Perfume image"     
-      />
+
+      <picture>
+        <source media="(min-width: 768px)" srcset="/images/image-product-desktop.jpg">
+        
+        <img src="/images/image-product-mobile.jpg" alt="Perfume image"/>
+      </picture>
+      
+      
     </section>
   
     <header>
