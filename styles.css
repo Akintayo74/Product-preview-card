@@ -93,7 +93,7 @@ header h1{
 @media (min-width: 768px) {
 
     body{
-        background-color: pink;
+        background-color: hsl(30, 54%, 90%);
     }
 
     .container{
