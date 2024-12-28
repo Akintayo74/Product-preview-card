@@ -13,8 +13,15 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
     /* padding: 20px; */
     gap: 1ch;
+}
+
+.product-card{
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .main-image img{
@@ -27,7 +34,7 @@ header{
 }
 
 main{
-    margin: 0px 20px;
+    margin: 0 20px;
 }
 
 header p{
@@ -76,6 +83,7 @@ header h1{
     padding: 10px;
     font-size: 30px;
     border-radius: 10px;
+    transition: background-color 500ms ease-in-out;
 }
 
 .btn img{
@@ -84,19 +92,49 @@ header h1{
 
 
 @media (min-width: 768px) {
+
+    body{
+        background-color: pink;
+    }
+
     .container{
+        display: flex;
         flex-direction: row;
+        
         /* width: 100%; */
-        padding: 20px;
+        /* padding: 20px; */
         height: 100vh;
+        margin: 0;
+    }
+
+    .product-card{
+        display: flex;
+
+
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 800px;
+        height: 500px;
     }
 
     .main-image{
-        width: 25%;
+        width: 50%;
+        /* margin: 0; */
+        height: 100%;
+    }
+
+    .main-image picture{
+        width: 100%;
+        height: 100%;
+        display: block;
     }
 
     .main-image img{
-        /* width: 100%; */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
     }
 
     .btn{   
@@ -104,20 +142,47 @@ header h1{
     }
 
     header{
-        width: 300px;
+        width: 250px;
+        margin: 0;
+        padding-inline-start: 0;
     }
 
     main{
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
         justify-content: center;
-        padding: 20px;
+        /* margin: 0; */
+        margin: auto;
+        background-color: white;
     }
 
 
+
     .main-text p{
-        width: 300px;
+        width: 250px;
+    }
+
+    .former-price{
+        top: -10px;
+        left: 15px;
+    }
+
+    .btn{
+        display: flex;
+    }
+
+    .btn button{
+        font-size: 20px;
+    }
+
+    
+}
+
+
+@media (hover: hover) {
+    .btn button:hover{
+        cursor: pointer;
+        background-color: hsl(212, 21%, 14%);
     }
 }
 
